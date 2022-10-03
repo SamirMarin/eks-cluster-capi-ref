@@ -1,0 +1,13 @@
+# CAPI
+# required to enable support for managed topologies and ClusterClass
+CLUSTER_TOPOLOGY: true
+
+# AWS
+# allow each cluster to have its own IAM roles
+CAPA_EKS_IAM: true
+# add additional roles to the control plane role that is created for an EKS cluster
+CAPA_EKS_ADD_ROLES: true
+# Enable EKS fargate
+EXP_EKS_FARGATE: true
+# External Resource Garbage Collection https://cluster-api-aws.sigs.k8s.io/topics/external-resource-gc.html
+EXP_EXTERNAL_RESOURCE_GC: true
